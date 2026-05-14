@@ -1,0 +1,71 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode"
+  ],
+
+  "modules-center": [
+    "sway/window"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "pulseaudio",
+    "memory",
+    "clock",
+    "custom/power"
+  ],
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "format": "{name}"
+  },
+
+  "sway/mode": {
+    "format": "{}"
+  },
+
+  "sway/window": {
+    "format": "{title}",
+    "max-length": 60
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "tooltip": true
+  },
+
+  "memory": {
+    "format": " {percentage}%",
+    "tooltip": true
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " muted",
+    "scroll-step": 5,
+    "tooltip": true
+  },
+
+  "clock": {
+    "format": " {:%H:%M}",
+    "format-alt": " {:%A %d %B %Y}",
+    "tooltip-format": "<big>{:%A}</big>\n{calendar}",
+    "calendar": {
+      "mode": "month",
+      "weeks-pos": "right",
+      "on-scroll": 1
+    }
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": "Éteindre",
+    "on-click": "swaymsg exit"
+  }
+}
+
