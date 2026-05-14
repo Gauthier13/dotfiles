@@ -7,6 +7,8 @@
 
 alias ls='eza -a -l'
 alias ..='z ..'
+alias nv='nvim'
+alias sn='shutdown now'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
