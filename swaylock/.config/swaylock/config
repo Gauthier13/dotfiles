@@ -1,0 +1,13 @@
+image=/usr/share/backgrounds/sway/paint_1.png
+show-keyboard-layout
+indicator-caps-lock
+font=Departure Mono
+font-size=16
+indicator-radius=100
+inside-color=1e1e2eff
+inside-clear-color=f9e2afff
+inside-ver-color=a6e3a1ff
+inside-wrong-color=f38ba8ff
+key-hl-color=94e2d5ff
+line-color=11111bff
+line-ver-color=a6e3a1ff
