@@ -6,7 +6,7 @@ chosen=$(echo -e "$options" | fuzzel --dmenu --hide-prompt)
 
 case "$chosen" in
     Lock)
-        swaylock
+        swaylock -C ~/.config/swaylock/config 
         ;;
     Logout)
         swaymsg exit
