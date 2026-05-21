@@ -10,6 +10,7 @@ alias ..='z ..'
 alias nv='nvim'
 alias sn='shutdown now'
 alias grep='grep --color=auto'
+alias hx='helix'
 PS1='[\u@\h \W]\$ '
 
 # zoxide
