@@ -1,0 +1,42 @@
+theme="nord"
+
+[editor]
+line-number = "relative"
+end-of-line-diagnostics = "hint"
+auto-pairs = true
+scrolloff = 10
+cursorline = true
+auto-completion = true
+auto-format = true
+rulers = [100]
+text-width = 80
+ 
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+ 
+[editor.lsp] 
+display-inlay-hints = true
+snippets = true
+
+[editor.file-picker]
+follow-symlinks = true
+
+[editor.cursor-shape]
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+center = ["spinner"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator"
+]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
