@@ -18,6 +18,7 @@ set $file nautilus
 # exec apps on startup
 exec swayosd-server
 exec wl-paste --watch cliphist store
+exec dunst
 
 ### Output configuration
 #
