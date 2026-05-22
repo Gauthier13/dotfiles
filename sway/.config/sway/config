@@ -192,9 +192,8 @@ client.background       $bg
 # borders
 default_border pixel 2 
 default_floating_border pixel 4
-#
+
 # Utilities:
-#
     # Special keys to adjust volume via PulseAudio
 
     # Volume raise with custom value
