@@ -2,62 +2,54 @@
   "layer": "top",
   "position": "top",
   "height": 10,
-
   "modules-left": [
     "sway/workspaces",
     "sway/mode",
     "sway/scratchpad",
   ],
-
   "modules-center": [
     "clock",
   ],
-
   "modules-right": [
     "cpu",
     "pulseaudio",
     "memory",
   ],
-
   "sway/workspaces": {
     "disable-scroll": true,
     "format": "{name}"
   },
-
   "sway/mode": {
     "format": "{}"
   },
-
   "sway/scratchpad": {
-              "format": "{icon} {count}",
-              "show-empty": false,
-              "format-icons": ["", "<U+F2D2>"],
-              "tooltip": true,
-              "tooltip-format": "{app}: {title}"
-         },
-  
+    "format": "{icon} {count}",
+    "show-empty": false,
+    "format-icons": [
+      "",
+      "<U+F2D2>"
+    ],
+    "tooltip": true,
+    "tooltip-format": "{app}: {title}"
+  },
   "sway/window": {
     "format": "{title}",
     "max-length": 60
   },
-
   "cpu": {
     "format": " {usage}%",
     "tooltip": true
   },
-
   "memory": {
     "format": " {percentage}%",
     "tooltip": true
   },
-
   "pulseaudio": {
     "format": " {volume}%",
     "format-muted": " muted",
     "scroll-step": 5,
     "tooltip": true
   },
-
   "clock": {
     "format": " {:%H:%M}",
     "format-alt": " {:%A %d %B %Y}",
@@ -68,11 +60,9 @@
       "on-scroll": 1
     }
   },
-
   "custom/power": {
     "format": "⏻",
     "tooltip": "Éteindre",
     "on-click": "swaymsg exit"
   }
 }
-
