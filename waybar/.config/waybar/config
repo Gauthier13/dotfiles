@@ -1,23 +1,22 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 28,
+  "height": 10,
 
   "modules-left": [
     "sway/workspaces",
-    "sway/mode"
+    "sway/mode",
+    "sway/scratchpad",
   ],
 
   "modules-center": [
-    "sway/window"
+    "clock",
   ],
 
   "modules-right": [
     "cpu",
     "pulseaudio",
     "memory",
-    "clock",
-    "custom/power"
   ],
 
   "sway/workspaces": {
@@ -29,6 +28,14 @@
     "format": "{}"
   },
 
+  "sway/scratchpad": {
+              "format": "{icon} {count}",
+              "show-empty": false,
+              "format-icons": ["", "<U+F2D2>"],
+              "tooltip": true,
+              "tooltip-format": "{app}: {title}"
+         },
+  
   "sway/window": {
     "format": "{title}",
     "max-length": 60
