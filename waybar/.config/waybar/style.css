@@ -35,15 +35,11 @@ window#waybar {
 }
 
 #scratchpad {
-  background: #3b4252;
-  color: #88c0d0;
+  background: #5e81ac;
+  color: #eceff4;
 
-  margin: 6px;
-  padding: 0 14px;
-
-  border-radius: 10px;
-
-  font-weight: bold;
+  padding: 0 12px;
+  margin: 4px;
 }
 
 #clock,
