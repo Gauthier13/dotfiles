@@ -21,7 +21,7 @@ exec wl-paste --watch cliphist store
 exec dunst
 
 ### Output configuration
-#
+
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 output * bg /usr/share/backgrounds/sway/paint_1.png fill
@@ -174,20 +174,17 @@ bindsym $mod+m mode "resize"
 
 
 # Look and feel
-set $bg        #354939
-set $bg_alt    #495C40
+set $bg        #2e3440
+set $bg_alt    #3b4252
 set $fg        #C5D1CB
 set $fg_dim    #8A9177
-set $accent    #BD989D
+set $accent    #d8dee9
 set $urgent    #9D955A
 
-client.focused          $accent $accent $bg $fg
-client.focused_inactive $bg_alt $bg_alt $fg_dim $fg_dim
-client.unfocused        $bg $bg $fg_dim $fg_dim
-client.urgent           $urgent $urgent $bg $bg
-client.placeholder      $bg $bg $fg $fg
-
-client.background       $bg
+client.focused          #81A1C1 #81A1C1 #ECEFF4 #81A1C1
+client.focused_inactive #3B4252 #3B4252 #D8DEE9 #3B4252
+client.unfocused        #2E3440 #2E3440 #D8DEE9 #2E3440
+client.urgent           #BF616A #BF616A #ECEFF4 #BF616A
 
 # borders
 default_border pixel 2 
