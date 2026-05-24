@@ -50,6 +50,10 @@ input type:keyboard {
     bindsym $mod+Shift+space exec $dmenu
     bindsym $mod+Shift+v exec cliphist list | fuzzel --dmenu | cliphist decode | wl-copy
 
+    # Marks -- jump to application
+    for_window [app_id="obsidian"] mark note
+    bindsym $mod+Shift+o [con_mark="note"] focus
+    
     # Launch file manager
     bindsym $mod+f exec $file
 
@@ -181,7 +185,8 @@ set $fg_dim    #8A9177
 set $accent    #d8dee9
 set $urgent    #9D955A
 
-client.focused          #81A1C1 #81A1C1 #ECEFF4 #81A1C1
+                        #border #bg     #text   #indicator  
+client.focused          #81A1C1 #81A1C1 #ECEFF4 #ECEFF4
 client.focused_inactive #3B4252 #3B4252 #D8DEE9 #3B4252
 client.unfocused        #2E3440 #2E3440 #D8DEE9 #2E3440
 client.urgent           #BF616A #BF616A #ECEFF4 #BF616A
