@@ -4,16 +4,16 @@
   "height": 10,
   "modules-left": [
     "sway/workspaces",
-    "sway/mode",
+    "sway/mode"
   ],
   "modules-center": [
     "clock",
-    "sway/scratchpad",
+    "sway/scratchpad"
   ],
   "modules-right": [
     "cpu",
     "pulseaudio",
-    "memory",
+    "memory"
   ],
   "sway/workspaces": {
     "disable-scroll": true,
