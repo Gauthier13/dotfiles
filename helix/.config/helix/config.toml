@@ -5,7 +5,7 @@ line-number = "relative"
 end-of-line-diagnostics = "hint"
 scrolloff = 10
 cursorline = true
-rulers = [100]
+rulers = [120]
 bufferline = "always"
  
 [editor.inline-diagnostics]
