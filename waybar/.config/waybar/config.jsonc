@@ -33,7 +33,7 @@
   },
   "sway/window": {
     "format": "{}",
-    "max-length": 20,
+    "max-length": 20
   },
   "cpu": {
     "format": " {usage}%",

@@ -14,11 +14,16 @@
   background: @bg-waybar;
 }
 
+#window {
+  margin-left: 10px;
+}
+
 #mode {
   color: #c3b7d1;
   font-size: 20px;
   font-weight: bold;
-  padding: 5 8px;
+  padding: 0 12px;
+  margin: 6px 4px;
   background-color: @bg;
   border-radius: 8px;
 }
@@ -36,7 +41,7 @@
 }
 
 #scratchpad {
-  background: #5e81ac;
+  background: @bg;
   padding: 0 12px;
   margin: 4px;
   border-radius: 8px;
