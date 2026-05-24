@@ -1,38 +1,39 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 10,
+  // MODULES 
   "modules-left": [
     "sway/workspaces",
+    "sway/window",
     "sway/mode"
   ],
   "modules-center": [
-    "clock",
-    "sway/scratchpad"
+    "clock"
   ],
   "modules-right": [
+    "sway/scratchpad",
     "cpu",
     "pulseaudio",
     "memory"
   ],
   "sway/workspaces": {
     "disable-scroll": true,
-    "format": "{name}"
+    "format": "{name}",
+    "icon": true
   },
   "sway/mode": {
     "format": "{}"
   },
   "sway/scratchpad": {
-    "format": "{icon} {count}",
+    "format": "{count}",
     "show-empty": false,
     "format-icons": [],
     "tooltip": true,
-    "tooltip-format": "{app}: {title}",
-    "disable-markup": true
+    "tooltip-format": "{app}: {title}"
   },
   "sway/window": {
-    "format": "{title}",
-    "max-length": 60
+    "format": "{}",
+    "max-length": 20,
   },
   "cpu": {
     "format": " {usage}%",
@@ -49,13 +50,29 @@
     "tooltip": true
   },
   "clock": {
-    "format": " {:%H:%M}",
+    "format": " {:%H:%M | %d %A %Y}",
     "format-alt": " {:%A %d %B %Y}",
     "tooltip-format": "<big>{:%A}</big>\n{calendar}",
     "calendar": {
-      "mode": "month",
+      "mode": "year",
+      "mode-mon-col": 3,
       "weeks-pos": "right",
-      "on-scroll": 1
+      "on-scroll": 1,
+      "on-click-right": "mode",
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
     }
   }
 }
