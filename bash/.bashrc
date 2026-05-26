@@ -12,7 +12,8 @@ alias grep='grep --color=auto'
 alias hx='helix'
 alias ff='felix'
 PS1='[\u@\h \W]\$ '
-EDITOR=hx
+
+export EDITOR=helix
 
 # zoxide
 eval "$(zoxide init bash)"
