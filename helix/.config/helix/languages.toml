@@ -41,3 +41,13 @@ auto-format = true
 [[language]]
 name = "java"
 auto-format = true
+
+[[language]]
+name = "xml"
+file-types = [ "xml", "svg", "xsd", "xslt", "xsl" ]
+auto-format = true
+formatter = { command = "xmllint", args = ["--format", "-"] }
+language-servers = [ "xml" ]
+
+[language-server.xml]
+command = "lemminx-linux"
