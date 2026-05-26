@@ -11,9 +11,11 @@ alias nv='nvim'
 alias grep='grep --color=auto'
 alias hx='helix'
 alias ff='felix'
+alias gg='lazygit'
 PS1='[\u@\h \W]\$ '
 
 export EDITOR=helix
+export TERMINAL=alacritty
 
 # zoxide
 eval "$(zoxide init bash)"
