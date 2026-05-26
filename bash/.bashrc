@@ -10,7 +10,9 @@ alias ..='z ..'
 alias nv='nvim'
 alias grep='grep --color=auto'
 alias hx='helix'
+alias ff='felix'
 PS1='[\u@\h \W]\$ '
+EDITOR=hx
 
 # zoxide
 eval "$(zoxide init bash)"
@@ -18,6 +20,8 @@ eval "$(zoxide init bash)"
 # startship
 eval "$(starship init bash)"
 . "$HOME/.cargo/env"
+
+export PATH="$HOME/.local/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
